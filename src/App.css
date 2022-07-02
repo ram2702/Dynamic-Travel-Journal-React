@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    font-family: "Inter";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    position: absolute;
+    width: 850px;
+    height: 704px;
+    margin-bottom: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+    width: 850px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #F55A5A;
+    margin-bottom: 70px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navpic {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.navtext {
+    height: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+    color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-card {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.item-card-img {
+    width: 250px;
+    height: 336px;
+    border-radius: 15px;
+}
+
+.item-card-text {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-card-title {
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+.item-card-title-pin {
+    width: 30px;
+    height: 30px;
+}
+
+.item-card-title-heading {
+    margin-right: 30px;
+}
+
+.item-card-title-link {
+    margin-top: 5px;
+    color: gray;
+}
+
+.item-card-text-maintitle {
+    font-size: 35px;
+    font-weight: 1500;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.item-card-text-date {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.item-card-text-desc {
+    margin-top: 20px;
+    margin-left: 10px;
 }

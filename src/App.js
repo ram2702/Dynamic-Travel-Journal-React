@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import dataset from "./data";
+import MockLoc from "./mockloc";
+import Navbar from "./Navbar";
 function App() {
+  console.log(document.all);
+  const item = dataset.map((soloDataSet) => {
+    console.log(soloDataSet);
+    return <MockLoc key={soloDataSet.id} soloDataSet={soloDataSet} />;
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Navbar />
+      {item}
     </div>
   );
 }
